@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">FRED BACAR</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="ac.html">AC</a>
+                <a href="video.html">Video</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <h1>Primeiro<br><span>Site AC</span></h1>
+            <p>Este aqui é o meu primeiro site de AC com HTML, CSS, JS</p>
+            
+        </div>
+    </section>
+
+    <script type="text/javascript">
+    // Funcionamento do botão
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () =>
+    {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+    
+    </script>
+
+
+</body>
+</html>
